@@ -1,0 +1,179 @@
+/* Colors from the original design */
+        body {
+            background-color: #f5ebe0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        /* Landing page */
+        #landing {
+            text-align: center;
+            padding-top: 100px;
+            height: 100vh;
+            background: linear-gradient(135deg, #e8e2d9, #edede9);
+        }
+
+        #landing img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid white;
+            margin-bottom: 25px;
+        }
+
+        .logo {
+            font-size: 42px;
+            color: #6b5b4f;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-size: 18px;
+            color: #8b7d6b;
+            margin-bottom: 40px;
+        }
+
+        .enter-btn {
+            background-color: #6b5b4f;
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 30px;
+        }
+
+        .enter-btn:hover {
+            background-color: #8b7d6b;
+        }
+
+        /* Main site */
+        #main {
+            display: none;
+        }
+
+        header {
+            background: #e8e2d9;
+            padding: 20px;
+            text-align: center;
+            color: #6b5b4f;
+        }
+
+        /* Navigation using Flexbox */
+        nav {
+            background: #b8aa9a;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            padding: 5px 15px;
+        }
+
+        nav button:hover {
+            text-decoration: underline;
+        }
+
+        /* Pages */
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .page {
+            display: none;
+            background: #e8e2d9;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        h2 {
+            color: #8b7d6b;
+            border-bottom: 2px solid #d4ccc0;
+            padding-bottom: 10px;
+        }
+
+        .page img {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin: 15px auto;
+            border-radius: 8px;
+        }
+
+        .price {
+            color: #a89888;
+            font-weight: bold;
+        }
+
+        .back-link {
+            color: #8b7d6b;
+            cursor: pointer;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        footer {
+            background: #b8aa9a;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        /* Reviews styling */
+        .review-box {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .review-box img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin: 0;
+        }
+
+        .error-box {
+            background: #ffcccb;
+            color: darkred;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 600px) {
+            .logo {
+                font-size: 28px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .page {
+                padding: 15px;
+            }
+        }
+    
